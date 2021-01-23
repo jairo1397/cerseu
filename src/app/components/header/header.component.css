@@ -82,12 +82,18 @@ p.ciudad {
     text-align: right;
 }
 
-p.slogan {
+div.slogan {
     text-transform: none!important;
+    display: block;
 }
 
-p.slogan span {
+div.slogan span {
     font-weight: bold;
+}
+
+div.descripcion {
+    text-transform: none!important;
+    padding: 50px;
 }
 
 h1.nombre-sitio {

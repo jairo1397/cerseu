@@ -16,6 +16,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { LoginComponent } from './components/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PagosComponent } from './components/pagos/pagos.component';
+import { CursoComponent } from './components/curso/curso.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PagosComponent } from './components/pagos/pagos.component';
     ContactoComponent,
     LoginComponent,
     HeaderComponent,
-    PagosComponent
+    PagosComponent,
+    CursoComponent
   ],
   imports: [
     BrowserModule,

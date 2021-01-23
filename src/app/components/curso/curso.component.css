@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+body {
+    background: #fff;
+    font-family: 'Roboto Condensed', sans-serif
+}
+
+.regresar {
+    margin-left: 15%;
+}
+
+.carousel-item {
+    width: 90%;
+    padding: 50px;
+    padding-left: 200px;
+}
+
+.price span {
+    font-size: 18px
+}
+
+.d-flex {
+    margin-right: 50px;
+}
+
+.cut {
+    text-decoration: line-through;
+    color: red
+}
+
+.icons i {
+    font-size: 17px;
+    color: green;
+    margin-right: 2px
+}
+
+.offers i {
+    color: green
+}
+
+.delivery i {
+    color: blue
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    padding: 2px 11px;
+    margin-right: 3px;
+    border: 1px solid #8f37aa;
+    display: inline-block;
+    color: #8f37aa;
+    border-radius: 3px;
+    text-transform: uppercase
+}
+
+label.radio input:checked+span {
+    border-color: #8f37aa;
+    background-color: #8f37aa;
+    color: #fff
+}
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+
+/* Timeline holder */
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+
+/* Timeline vertical line */
+
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+
+/* Timeline item arrow */
+
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+
+/* Timeline item circle marker */
+
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+.background {
+    background: #4e4e4e;
+    background: -webkit-linear-gradient(to right, #666666, #202227);
+    background: linear-gradient(to right, #ffffff, #282a30);
+    min-height: 100vh;
+}

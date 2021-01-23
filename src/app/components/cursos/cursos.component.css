@@ -3,22 +3,39 @@ body {
 }
 
 .ratings i {
-    color: green
+    font-size: 16px;
+    color: red
 }
 
-.install span {
-    font-size: 12px
+.strike-text {
+    color: red;
+    text-decoration: line-through
 }
 
-.col-md-4 {
-    margin-top: 27px
+.product-image {
+    width: 100%
 }
 
-.lista {
-    text-align: center;
-    margin-top: 50px;
+.dot {
+    height: 7px;
+    width: 7px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 3px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block
 }
 
-.container {
-    margin-bottom: 20px;
+.spec-1 {
+    color: #938787;
+    font-size: 15px
+}
+
+h5 {
+    font-weight: 400
+}
+
+.para {
+    font-size: 16px
 }

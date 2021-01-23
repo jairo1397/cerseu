@@ -1,15 +1,28 @@
 <h2 class="container lista animated fadeIn fast">
     Listado de cursos
 </h2>
-<div class="container mt-5 animated fadeIn">
-    <div class="row">
-        <div class="col-md-4" *ngFor="let curso of cursos">
-            <div class="card p-3">
-                <div class="d-flex flex-row mb-3"><img [src]="curso.img" width="70">
-                    <div class="d-flex flex-column ml-2"><span>{{ curso.nombre }}</span><span class="text-black-50">{{ curso.profesor}}</span><span class="ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+
+<div class="container mt-5 mb-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-10 " *ngFor="let curso of cursos; index as i">
+            <div class="row p-2 bg-white border rounded">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" [src]="curso.img"></div>
+                <div class="col-md-6 mt-1">
+                    <h5>{{ curso.nombre }}</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>310</span>
+                    </div>
+
+
+                    <p class="text-justify text-truncate para mb-0">{{curso.descripcion}}<br><br></p>
+                    <p>Profesor: {{ curso.profesor }}</p>
                 </div>
-                <h6>{{ curso.descripcion}}</h6>
-                <div class="d-flex justify-content-between install mt-3"><span>2021</span><span class="text-primary"><button>Matricula</button></span></div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-1">{{curso.precioO}}</h4><span class="strike-text">{{curso.precioN}}</span>
+                    </div>
+                    <div class="d-flex flex-column mt-4"><button (click)="verCurso(i)" class="btn btn-primary btn-sm" type="button">Ver mas</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Favoritos</button></div>
+                </div>
             </div>
         </div>
     </div>
