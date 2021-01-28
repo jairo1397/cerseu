@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "amauta"
+  "defaultProject": "amauta",
+  "cli": {
+    "analytics": "63972539-8dc4-420b-8aba-d60d56f2bcc1"
+  }
 }

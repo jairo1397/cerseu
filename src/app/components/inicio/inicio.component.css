@@ -45,3 +45,27 @@ body {
 .progress {
     height: 10px;
 }
+
+.contenedor {
+    width: 98%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width:480px) {
+    .contenedor {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .contenedor {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .contenedor {
+        width: 90%;
+        max-width: 1100px;
+    }
+}
