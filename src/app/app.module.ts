@@ -21,6 +21,7 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
 import { CursoTarjetaComponent } from './components/curso-tarjeta/curso-tarjeta.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { ResgistroComponent } from './components/resgistro/resgistro.component';
+import { ClasesComponent } from './components/clases/clases.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ResgistroComponent } from './components/resgistro/resgistro.component';
     BuscadorComponent,
     CursoTarjetaComponent,
     UsuarioComponent,
-    ResgistroComponent
+    ResgistroComponent,
+    ClasesComponent
   ],
   imports: [
     BrowserModule,

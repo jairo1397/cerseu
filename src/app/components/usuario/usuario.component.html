@@ -1,37 +1,170 @@
-<h1>Nombre del usuario</h1>
-<br> br
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<h1>Luis Gonzales Ayvar</h1>
+<h5>Pipo1385</h5>
+<br>
 <h2>Cursos matriculados:</h2>
 
-<div class="container mt-5">
+<div class="container">
     <div class="row">
-        <div class="col-md-4">
-            <div class="card p-3">
-                <div class="d-flex flex-row mb-3"><img src="https://i.imgur.com/ccMhxvC.png" width="70">
-                    <div class="d-flex flex-column ml-2"><span>Stripe</span><span class="text-black-50">Jairo espinoza</span><span class="ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+        <div class="col-12">
+            <div class="card mt-3 tab-card">
+                <div class="card-header tab-card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One" aria-selected="true">Curso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two" aria-selected="false">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="Three" aria-selected="false">Material</a>
+                        </li>
+                    </ul>
                 </div>
-                <h6>Get more context on your users with stripe data inside our platform.</h6>
-                <div class="d-flex justify-content-between install mt-3"><span>2020</span><span class="text-primary">View&nbsp;<i class="fa fa-angle-right"></i></span></div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-3">
-                <div class="d-flex flex-row mb-3"><img src="../../../assets/images/javascript.PNG" width="70">
-                    <div class="d-flex flex-column ml-2"><span>Javascript</span><span class="text-black-50">Luis Gonzales</span><span class="ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
+                        <div class="row p-2 bg-white border rounded">
+                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="../../../assets/images/html.PNG"></div>
+                            <div class="col-md-6 mt-1">
+                                <h5>Curso de HTML 5</h5>
+                                <div class="d-flex flex-row">
+
+                                </div>
+
+                                <p class="text-justify para mb-0">HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.<br><br></p>
+                                <p>Profesor: Susana Rivera</p>
+                                <p>Dias de clases: Jueves</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade p-3" id="two" role="tabpanel" aria-labelledby="two-tab">
+                        <h5 class="card-title">Clases de Html 5</h5>
+                        <app-clases></app-clases>
+
+                    </div>
+                    <div class="tab-pane fade p-3" id="three" role="tabpanel" aria-labelledby="three-tab">
+                        <h5 class="card-title">Material de clases</h5>
+                        <p class="card-text">Documentos Utilizados: </p>
+                        <p class="card-text">Enlace del Drive: </p>
+                        <p class="card-text">Enlace de videos: </p>
+
+                    </div>
+
                 </div>
-                <h6>Capture and sync subscribers from your mailchimp platform to ours with ease.</h6>
-                <div class="d-flex justify-content-between install mt-3"><span>2021</span><span class="text-primary">View&nbsp;<i class="fa fa-angle-right"></i></span></div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-3">
-                <div class="d-flex flex-row mb-3"><img src="../../../assets/images/html.PNG" width="70">
-                    <div class="d-flex flex-column ml-2"><span>HTML</span><span class="text-black-50">Neisser Guillen</span><span class="ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>
-                </div>
-                <h6>Use dropbox to sync your photos to our platform and share it with others.</h6>
-                <div class="d-flex justify-content-between install mt-3"><span>2021</span><span class="text-primary">View&nbsp;<i class="fa fa-angle-right"></i></span></div>
-            </div>
+
         </div>
     </div>
 </div>
 
-<h3>Enlaces de las sesiones de clases:</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card mt-3 tab-card">
+                <div class="card-header tab-card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One" aria-selected="true">Curso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two" aria-selected="false">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="Three" aria-selected="false">Material</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
+                        <div class="row p-2 bg-white border rounded">
+                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="../../../assets/images/html.PNG"></div>
+                            <div class="col-md-6 mt-1">
+                                <h5>Curso de HTML 5</h5>
+                                <div class="d-flex flex-row">
+
+                                </div>
+
+                                <p class="text-justify para mb-0">HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.<br><br></p>
+                                <p>Profesor: Susana Rivera</p>
+                                <p>Dias de clases: Jueves</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade p-3" id="two" role="tabpanel" aria-labelledby="two-tab">
+                        <h5 class="card-title">Clases de Html 5</h5>
+                        <app-clases></app-clases>
+
+                    </div>
+                    <div class="tab-pane fade p-3" id="three" role="tabpanel" aria-labelledby="three-tab">
+                        <h5 class="card-title">Material de clases</h5>
+                        <p class="card-text">Documentos Utilizados: </p>
+                        <p class="card-text">Enlace del Drive: </p>
+                        <p class="card-text">Enlace de videos: </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card mt-3 tab-card">
+                <div class="card-header tab-card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One" aria-selected="true">Curso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two" aria-selected="false">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="Three" aria-selected="false">Material</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
+                        <div class="row p-2 bg-white border rounded">
+                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="../../../assets/images/html.PNG"></div>
+                            <div class="col-md-6 mt-1">
+                                <h5>Curso de HTML 5</h5>
+                                <div class="d-flex flex-row">
+
+                                </div>
+
+                                <p class="text-justify para mb-0">HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.<br><br></p>
+                                <p>Profesor: Susana Rivera</p>
+                                <p>Dias de clases: Jueves</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade p-3" id="two" role="tabpanel" aria-labelledby="two-tab">
+                        <h5 class="card-title">Clases de Html 5</h5>
+                        <app-clases></app-clases>
+
+                    </div>
+                    <div class="tab-pane fade p-3" id="three" role="tabpanel" aria-labelledby="three-tab">
+                        <h5 class="card-title">Material de clases</h5>
+                        <p class="card-text">Documentos Utilizados: </p>
+                        <p class="card-text">Enlace del Drive: </p>
+                        <p class="card-text">Enlace de videos: </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
