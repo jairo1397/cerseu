@@ -142,3 +142,19 @@ h4,
     background-color: coral;
     border-color: coral;
 }
+
+.img-thumbnail {
+    display: block;
+    margin: auto;
+    background-image: center;
+    height: 200px;
+    width: 200px;
+}
+
+@media only screen and (min-width:768px) {
+    .img-thumbnail {
+        background-image: center;
+        width: 300px;
+        height: 300px;
+    }
+}

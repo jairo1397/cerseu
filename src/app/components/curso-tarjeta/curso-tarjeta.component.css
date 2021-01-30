@@ -10,8 +10,6 @@
  @media only screen and (min-width:768px) {
      div img {
          background-image: center;
-         height: 250px;
-         width: 270px;
      }
  }
  
