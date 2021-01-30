@@ -19,6 +19,7 @@ import { PagosComponent } from './components/pagos/pagos.component';
 import { CursoComponent } from './components/curso/curso.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { CursoTarjetaComponent } from './components/curso-tarjeta/curso-tarjeta.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CursoTarjetaComponent } from './components/curso-tarjeta/curso-tarjeta.
     PagosComponent,
     CursoComponent,
     BuscadorComponent,
-    CursoTarjetaComponent
+    CursoTarjetaComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,
