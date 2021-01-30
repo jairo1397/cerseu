@@ -1,0 +1,25 @@
+<div class="container mt-5 mb-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-10 ">
+            <div class="row p-2 bg-white border rounded">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" [src]="curso.img"></div>
+                <div class="col-md-6 mt-1">
+                    <h5>{{ curso.nombre }}</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>310</span>
+                    </div>
+
+
+                    <p class="text-justify text-truncate para mb-0">{{curso.descripcion}}<br><br></p>
+                    <p>Profesor: {{ curso.profesor }}</p>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-1">{{curso.precioO}}</h4><span class="strike-text">{{curso.precioN}}</span>
+                    </div>
+                    <div class="d-flex flex-column mt-4"><button (click)="verCurso()" class="btn btn-primary btn-sm" type="button">Ver mas</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Favoritos</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

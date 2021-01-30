@@ -18,6 +18,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { PagosComponent } from './components/pagos/pagos.component';
 import { CursoComponent } from './components/curso/curso.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { CursoTarjetaComponent } from './components/curso-tarjeta/curso-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     HeaderComponent,
     PagosComponent,
     CursoComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    CursoTarjetaComponent
   ],
   imports: [
     BrowserModule,
