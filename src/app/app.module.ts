@@ -22,9 +22,13 @@ import { CursoTarjetaComponent } from './components/curso-tarjeta/curso-tarjeta.
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { ResgistroComponent } from './components/resgistro/resgistro.component';
 
+
 import { ClasesComponent } from './components/clases/clases.component';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+
+
 
 
 @NgModule({
