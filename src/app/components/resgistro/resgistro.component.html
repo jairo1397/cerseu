@@ -1,11 +1,41 @@
 <div class="login-dark">
-    <form method="post">
+    <form [formGroup]="registro">
         <h2 class="sr-only">Registrate</h2>
         <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
-        <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Correo electronico"></div>
-        <div class="form-group"><input class="form-control" type="user" name="user" placeholder="Nombre de usuario"></div>
-        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Contraseña"></div>
-        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Repite la Contraseña"></div>
-        <div class="form-group"><button [routerLink]="['/login']" class="btn btn-primary btn-block" type="submit">Registrarse</button></div>
+        <div class="form-group">
+          <label>
+          <input [class.is-invalid]="primEmail.invalid && primEmail.touched" formControlName="primaryEmail"
+                 class="form-control" type="email" name="email" placeholder="Correo electronico" />
+          </label>
+
+          <div *ngIf="(primEmail.invalid && primEmail.touched) || primEmail.dirty">
+            <small *ngIf="primEmail.errors?.required" class="text-danger"> Email requerido</small>
+            <!--question mark(?) is a safe navigation operator-->
+            <small *ngIf="primEmail.errors?.pattern" class="text-danger">Email Invalido</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>
+          <input [class.is-invalid]="usernam.invalid && usernam.touched" formControlName="username"
+                 class="form-control" type="user" name="user"  minlength="8" placeholder="Nombre de usuario">
+          </label>
+          <div *ngIf="(usernam.invalid && usernam.touched) || usernam.dirty">
+            <small *ngIf="usernam.errors?.required" class="text-danger">Username requerido</small>
+            <small *ngIf="usernam.hasError('minlength')" class="text-danger">Mas de 8 caracteres</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>
+          <input [class.is-invalid]="passwrd.invalid && passwrd.touched" formControlName="password"
+                 class="form-control" type="password" name="password"  minlength="10" placeholder="Contraseña">
+          </label>
+          <div *ngIf="(passwrd.invalid && passwrd.touched) || passwrd.dirty">
+            <small *ngIf="passwrd.errors?.required" class="text-danger">Password is required</small>
+            <small *ngIf="passwrd.hasError('minlength')" class="text-danger">Mas de 10 caracteres</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <button [routerLink]="['/login']" [disabled]="!registro.valid" class="btn btn-primary btn-block" type="submit">Registrarse</button>
+        </div>
     </form>
 </div>
