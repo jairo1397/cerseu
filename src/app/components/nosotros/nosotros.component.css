@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 10px;
+}
+
+div.galeria a {
+    display: inline-block;
+    margin: auto;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+.seccion h2 {
+    text-align: center;
+}
