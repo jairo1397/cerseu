@@ -22,7 +22,11 @@ export class ResgistroComponent implements OnInit {
     )
   });
 
-  constructor() { }
+  constructor(
+    public username: string,
+    public password: string,
+    public primaryEmail: string
+  ) { }
 
   ngOnInit(): void {
   }
