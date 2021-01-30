@@ -21,6 +21,7 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
 import { CursoTarjetaComponent } from './components/curso-tarjeta/curso-tarjeta.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { ResgistroComponent } from './components/resgistro/resgistro.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,9 @@ import { ResgistroComponent } from './components/resgistro/resgistro.component';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     CursosService
