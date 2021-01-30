@@ -9,7 +9,8 @@ export class CursosService {
           img: "assets/images/html.PNG",
           profesor:"Luis Gonzales Ayvar",
           precioN: "19.99",
-          precioO: "9.99"
+          precioO: "9.99",
+          puntaje: "210",
         },
         {
           nombre: "Curso de CSS 3",
@@ -17,7 +18,8 @@ export class CursosService {
           img: "assets/images/css.PNG",
           profesor:"Gabriel Chavez Guerrero",
           precioN: "39.99",
-          precioO: "29.99"
+          precioO: "29.99",
+          puntaje: "210",
         },
         {
           nombre: " Curso de JavaScript",
@@ -25,7 +27,8 @@ export class CursosService {
           img: "assets/images/javascript.PNG",
           profesor: "Jairo Espinoza Quispe",
           precioN: "29.99",
-          precioO: "19.99"
+          precioO: "19.99",
+          puntaje: "410",
         },
         {
           nombre: "Curso de Ofimatica",
@@ -33,7 +36,8 @@ export class CursosService {
           img: "assets/images/ofimatica.PNG",
           profesor:"Neisser Guillen Aponte",
           precioN: "19.99",
-          precioO: "9.99"
+          precioO: "9.99",
+          puntaje: "310",
         },
         {
           nombre: "Computacion Informatica",
@@ -41,7 +45,8 @@ export class CursosService {
           img: "assets/images/computacion.PNG",
           profesor: "Luis Gonzales Ayvar",
           precioN: "49.99",
-          precioO: "39.99"
+          precioO: "39.99",
+          puntaje: "340",
         },
         {
           nombre: "Curso de Git-Hub",
@@ -49,7 +54,8 @@ export class CursosService {
           img: "assets/images/github.PNG",
           profesor: "Neisser Guillen Aponte",
           precioN: "39.99",
-          precioO: "29.99"
+          precioO: "29.99",
+          puntaje: "300",
         },
         {
           nombre: "Curso de Angular",
@@ -57,7 +63,8 @@ export class CursosService {
           img: "assets/images/angular.PNG",
           profesor: "Andre Coral Loli",
           precioN: "29.99",
-          precioO: "19.99"
+          precioO: "19.99",
+          puntaje: "180",
         }
       ];
 
@@ -72,6 +79,19 @@ export class CursosService {
     getCurso(idx: number){
       return this.cursos[idx];
     }
+    buscarCursos( termino: string){
+      let cursosArr: Curso[]=[];
+      termino = termino.toLowerCase();
+
+      for( let curso of this.cursos){
+        let nombre = curso.nombre.toLowerCase();
+        if( nombre.indexOf( termino ) >= 0){
+          cursosArr.push(curso)
+        }
+
+      }
+     return cursosArr;
+    }
 }
 export interface Curso{
     nombre: String;
@@ -80,5 +100,5 @@ export interface Curso{
     profesor: String;
     precioN: String;
     precioO: String;
-
+    puntaje: String;
 };

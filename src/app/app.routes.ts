@@ -7,7 +7,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { LoginComponent } from './components/login/login.component';
 import { CursoComponent } from './components/curso/curso.component';
 import { PagosComponent } from './components/pagos/pagos.component';
-
+import { BuscadorComponent } from './components/buscador/buscador.component';
 const APP_ROUTES: Routes = [
     { path: 'inicio', component: InicioComponent },
     { path: 'nosotros', component: NosotrosComponent },
@@ -17,6 +17,7 @@ const APP_ROUTES: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'curso/:id', component: CursoComponent },
     { path: 'pagos', component: PagosComponent },
+    { path: 'buscar/:termino', component: BuscadorComponent },
     { path: '**', pathMatch:'full', redirectTo: 'Inicio' }
 ];
 
