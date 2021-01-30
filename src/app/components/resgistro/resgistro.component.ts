@@ -23,9 +23,9 @@ export class ResgistroComponent implements OnInit {
   });
 
   constructor(
-    public username: string,
-    public password: string,
-    public primaryEmail: string
+    // public username: string,
+    // public password: string,
+    // public primaryEmail: string
   ) { }
 
   ngOnInit(): void {
