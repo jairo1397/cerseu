@@ -21,11 +21,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
 import { CursoTarjetaComponent } from './components/curso-tarjeta/curso-tarjeta.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { ResgistroComponent } from './components/resgistro/resgistro.component';
-<<<<<<< HEAD
 import { ClasesComponent } from './components/clases/clases.component';
-=======
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
->>>>>>> 7ce80900edc7d420a7e1cee2cfa0d9683d45cde3
 
 @NgModule({
   declarations: [
