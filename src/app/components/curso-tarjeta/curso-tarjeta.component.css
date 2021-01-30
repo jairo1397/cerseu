@@ -1,24 +1,45 @@
-div img {
-    display: block;
-    margin: auto;
-    background-image: center;
-    height: 200px;
-    width: 200px;
-}
-
-@media only screen and (min-width:768px) {
-    div img {
-        background-image: center;
-        height: 250px;
-        width: 270px;
-    }
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-    font-family: 'PT Sans', sans-serif;
-    margin-top: 10px;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+ div img {
+     display: block;
+     margin: auto;
+     background-image: center;
+     height: 200px;
+     width: 200px;
+ }
+ 
+ @media only screen and (min-width:768px) {
+     div img {
+         background-image: center;
+         height: 250px;
+         width: 270px;
+     }
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ p {
+     font-family: 'PT Sans', sans-serif;
+     margin-top: 10px;
+ }
+ 
+ .icons i {
+     font-size: 17px;
+     color: coral;
+     margin-right: 2px
+ }
+ 
+ .btn-dark {
+     background-color: coral;
+     border-color: coral;
+ }
+ 
+ .btn-outline-dark {
+     border-color: coral;
+ }
+ 
+ .cut {
+     text-decoration: line-through;
+     color: red
+ }
