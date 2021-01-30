@@ -12,7 +12,7 @@
                     </ul>
                     <div class="form-inline mr-auto">
                         <div class="form-group"><input class="form-control" type="text" name="search" placeholder="Buscar Curso" (keyup.enter)="buscarCurso(buscarTexto.value)" #buscarTexto>
-                            <a (click)="buscarCurso(buscarTexto.value)" class="btn btn-light action-button " role="button" for="search-field"><i class="fa fa-search"></i></a>
+                            <a (click)="buscarCurso(buscarTexto.value)" class="btn btn-dark action-button " role="button" for="search-field"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                     <span class="navbar-text"><a [routerLink]="['login']" class="login">Iniciar Seción</a></span><a class="btn btn-light action-button" role="button" [routerLink]="['registro']">Sign Up</a></div>
