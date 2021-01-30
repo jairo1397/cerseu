@@ -113,6 +113,20 @@ p {
     transform: rotate(180deg);
 }
 
+div img {
+    display: block;
+    margin: auto;
+    background-image: center;
+    height: 200px;
+    width: 200px;
+}
+
+@media only screen and (min-width:768px) {
+    div img {
+        background-image: center;
+    }
+}
+
 
 /*
   *
