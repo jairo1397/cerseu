@@ -9,6 +9,7 @@ import { CursoComponent } from './components/curso/curso.component';
 import { PagosComponent } from './components/pagos/pagos.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
+import { ResgistroComponent } from './components/resgistro/resgistro.component';
 const APP_ROUTES: Routes = [
     { path: 'inicio', component: InicioComponent },
     { path: 'nosotros', component: NosotrosComponent },
@@ -20,6 +21,7 @@ const APP_ROUTES: Routes = [
     { path: 'pagos', component: PagosComponent },
     { path: 'buscar/:termino', component: BuscadorComponent },
     { path: 'usuario', component: UsuarioComponent },
+    { path: 'registro', component: ResgistroComponent },
     { path: '**', pathMatch:'full', redirectTo: 'Inicio' }
 ];
 
