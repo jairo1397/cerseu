@@ -135,3 +135,12 @@ div img {
   * ==========================================
   *
   */
+
+.testimonial-image {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    overflow: hidden;
+}

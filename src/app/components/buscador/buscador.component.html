@@ -6,6 +6,16 @@
         <div class="alert alert-info" role="alert">
             No existen resultados con el termino: {{ termino }}
         </div>
+        <div>
+            <img src="../../../assets/images/opps.PNG" alt="No se encontre resultados">
+        </div>
     </div>
 </div>
 <app-curso-tarjeta [curso]="curso" [index]="curso.idx" *ngFor="let curso of cursos; let i = index"></app-curso-tarjeta>
+<div class="row animated fedeIn fast">
+    <div class="col-md-12" *ngIf="cursos.length>=1">
+        <div>
+            <img class="imagenbaja" src="../../../assets/images/resultados.png">
+        </div>
+    </div>
+</div>
