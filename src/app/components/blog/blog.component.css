@@ -283,3 +283,8 @@ body {
 .form-group textarea.form-input {
     height: 150px;
 }
+
+.btn-dark {
+    background-color: coral;
+    border-color: coral;
+}

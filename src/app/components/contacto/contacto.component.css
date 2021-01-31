@@ -13,3 +13,8 @@ label,
     font-family: 'PT Sans', sans-serif;
     margin-top: 10px;
 }
+
+.btn-dark {
+    background-color: coral;
+    border-color: coral;
+}
