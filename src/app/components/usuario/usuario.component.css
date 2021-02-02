@@ -3,7 +3,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 ***/
 
 body {
-    background-color: #f7f8f9;
+    background-color: rgb(255, 208, 121);
 }
 
 h1,
@@ -30,7 +30,7 @@ p {
 }
 
 .tab-card-header {
-    background: none;
+    background-color: rgb(255, 208, 121);
 }
 
 
@@ -51,6 +51,10 @@ p {
     margin-right: 0;
     color: #737373;
     padding: 2px 15px;
+}
+
+.tab-content {
+    background-color: rgb(255, 208, 121);
 }
 
 .tab-card-header>.nav-tabs>li>a.show {
@@ -143,4 +147,49 @@ div img {
     height: 80px;
     border-radius: 100px;
     overflow: hidden;
+}
+
+.title {
+    font-size: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.8em;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.products {
+    background-color: #f7fbff;
+    padding: 25px;
+}
+
+.products .item {
+    margin-bottom: 1em;
+}
+
+.products .item-name {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.products .item-description {
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+.products .item p {
+    margin-bottom: 0.2em;
+}
+
+.products .price {
+    float: right;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.products .total {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    padding-top: 19px;
+    font-weight: 600;
+    line-height: 1;
 }
