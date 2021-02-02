@@ -24,17 +24,17 @@
  
  .icons i {
      font-size: 17px;
-     color: coral;
+     color: orange;
      margin-right: 2px
  }
  
  .btn-dark {
-     background-color: coral;
-     border-color: coral;
+     background-color: orange;
+     border-color: orange;
  }
  
  .btn-outline-dark {
-     border-color: coral;
+     border-color: orange;
  }
  
  .cut {

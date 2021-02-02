@@ -12,7 +12,7 @@ body {
 
 h3 {
     font-size: 1.8em;
-    color: #fe4918;
+    color: orange;
     font-family: 'PT Sans', sans-serif;
     margin: 0;
 }
@@ -25,7 +25,7 @@ h2 {
 }
 
 div.hero {
-    background-image: url(../../../assets/images/encabezado.jpg);
+    background-color: orange;
     height: 40vh;
     background-position: top center;
     background-size: cover;
@@ -110,7 +110,7 @@ div.informacion-evento p {
 }
 
 div.informacion-evento p i {
-    color: #fe4918;
+    color: rgb(255, 217, 0);
     font-size: 2.4rem;
 }
 
@@ -141,7 +141,7 @@ h1.nombre-sitio {
     font-size: 8.9vw;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
-    color: coral;
+    color: rgb(7, 24, 255);
 }
 
 @media only screen and (min-width:768px) {

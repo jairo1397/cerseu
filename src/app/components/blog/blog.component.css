@@ -9,7 +9,7 @@ h2 p {
 
 .btn.btn-outline-primary:hover,
 .bg-primary {
-    background-color: coral !important;
+    background-color: orange !important;
 }
 
 .section-medium {
@@ -285,6 +285,6 @@ body {
 }
 
 .btn-dark {
-    background-color: coral;
-    border-color: coral;
+    background-color: orange;
+    border-color: orange;
 }

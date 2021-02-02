@@ -37,7 +37,7 @@ p {
 
 .icons i {
     font-size: 17px;
-    color: coral;
+    color: orange;
     margin-right: 2px;
 }
 
@@ -133,14 +133,14 @@ li.timeline-item::before {
 
 h4,
 .display-4 {
-    color: coral;
+    color: orange;
     font-family: 'Oswald', sans-serif;
     margin-top: 10px;
 }
 
 .btn-dark {
-    background-color: coral;
-    border-color: coral;
+    background-color: orange;
+    border-color: orange;
 }
 
 .img-thumbnail {
