@@ -6,7 +6,7 @@
                 <div class="col-md-6 mt-1">
                     <h5>{{ curso.nombre }}</h5>
                     <div class="d-flex flex-row">
-                        <div class="icons mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>{{curso.puntaje}}</span>
+                        <div class="icons mr-2"><i class="fa fa-clock"></i></div><span>{{curso.horas}}</span>
                     </div>
 
 
@@ -17,7 +17,7 @@
                     <span class="font-weight-bold"> Precio en soles: </span><br>
                     <div class="d-flex flex-row align-items-center">
 
-                        <h4 class="mr-1">{{curso.precioO}}</h4><span class="mr-2 cut">{{curso.precioN}}</span>
+                        <h4 class="mr-1">{{curso.precio}}</h4>
                     </div>
                     <div class="d-flex flex-column mt-4"><button (click)="verCurso()" class="btn btn-dark btn-sm" type="button">Ver mas</button><button class="btn btn-outline-dark btn-sm mt-2" type="button">Favoritos</button></div>
                 </div>

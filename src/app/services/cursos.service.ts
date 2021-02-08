@@ -4,13 +4,12 @@ import { Injectable } from '@angular/core';
 export class CursosService {
     private cursos:Curso[]=[
       {
-        nombre: " Curso de HTML 5",
+        nombre: "Curso de HTML 5",
         descripcion: "HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.",
         img: "assets/images/html.PNG",
         profesor:"Susana Rivera",
-        precioN: "19.99",
-        precioO: "9.99",
-        puntaje: "210",
+        precio: "100",
+        horas: "24",
   clase1: "Introducción al curso de HTML5",
   clase2: "Creando nuestro primer documento HTML en VSCODE",
   clase3: "Sintaxis de las etiquetas en HTML",
@@ -29,9 +28,8 @@ export class CursosService {
         descripcion: "CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.​",
         img: "assets/images/css.PNG",
         profesor:"Susan Sanchez",
-        precioN: "39.99",
-        precioO: "29.99",
-        puntaje: "210",
+        precio: "120",
+        horas: "24",
   clase1: "Introducción a CSS3",
   clase2: "Creando archivos CSS3",
   clase3: "Comentarios en CSS3",
@@ -46,13 +44,12 @@ export class CursosService {
   clase12: "Final curso CSS3",
       },
       {
-        nombre: " Curso de JavaScript",
+        nombre: "Curso de JavaScript",
         descripcion: "JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico.",
         img: "assets/images/javascript.PNG",
         profesor: "Juan Sanchez",
-        precioN: "29.99",
-        precioO: "19.99",
-        puntaje: "410",
+        precio: "80",
+        horas: "18",
   clase1: "Introducción a JavaScript",
   clase2: "Variables y constantes",
   clase3: "Tipos de datos",
@@ -71,9 +68,8 @@ export class CursosService {
         descripcion: "Ofimática, a veces también llamado burótica, ​ designa al conjunto de técnicas, aplicaciones y herramientas informáticas que se utilizan en funciones de oficina para optimizar, automatizar, mejorar tareas y procedimientos relacionados.",
         img: "assets/images/ofimatica.PNG",
         profesor:"Harold Garcia",
-        precioN: "19.99",
-        precioO: "9.99",
-        puntaje: "310",
+        precio: "150",
+        horas: "30",
   clase1: "Introducción a Word 2016",
   clase2: "Tareas básicas",
   clase3: "Edición de un documento",
@@ -92,9 +88,8 @@ export class CursosService {
         descripcion: "La informática, ​ también llamada computación, ​ es la rama de la ciencia que se encarga de estudiar la administración de métodos, técnicas y procesos con el fin de almacenar, procesar y transmitir información y datos en formato digital.",
         img: "assets/images/computacion.PNG",
         profesor: "Susana Rivera",
-        precioN: "49.99",
-        precioO: "39.99",
-        puntaje: "340",
+        precio: "50",
+        horas: "24",
   clase1: "Introducción a Computacion Informatica",
   clase2: "Encender y Apagar Correctamente Computador. Conexión de sus partes",
   clase3: "Qué es un Sistema Operativo. Funciones y Tipos. Windows, Mac, y más",
@@ -113,9 +108,8 @@ export class CursosService {
         descripcion: "GitHub es una forja para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador.",
         img: "assets/images/github.PNG",
         profesor: "Shari Herrera",
-        precioN: "39.99",
-        precioO: "29.99",
-        puntaje: "300",
+        precio: "60",
+        horas: "24",
   clase1: "Introducción a Git-Hub",
   clase2: "Primer Repositorio y Commit",
   clase3: "Stage, Logs y Git Alias",
@@ -134,9 +128,8 @@ export class CursosService {
         descripcion: "Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página.",
         img: "assets/images/angular.PNG",
         profesor: "Rafael Bautista",
-        precioN: "29.99",
-        precioO: "19.99",
-        puntaje: "180",
+        precio: "50",
+        horas: "24",
   clase1: "Introducción a Angular",
   clase2: "Tu Primera Aplicación Angular",
   clase3: "Componentes y Enrutamiento",
@@ -186,9 +179,8 @@ export interface Curso{
     descripcion: String;
     img: String;
     profesor: String;
-    precioN: String;
-    precioO: String;
-    puntaje: String;
+    precio: String;
+    horas: String;
     clase1: String;
     clase2: String;
     clase3: String;
@@ -201,6 +193,4 @@ export interface Curso{
     clase10: String;
     clase11: String;
     clase12: String;
-
-
 };
